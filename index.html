@@ -3,115 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StyleFinder - Discover Your Perfect Look</title>
+    <title>StyleSolver - Find Your Perfect Style</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">StyleFinder</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">StyleSolver</h1>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#quiz">Style Quiz</a></li>
-                <li><a href="#occasions">Occasions</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Discover Your Signature Style</h1>
-                <p>Unlock your fashion potential with personalized style recommendations</p>
-                <button class="cta-button">Start Your Style Journey</button>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Perfect Style</h1>
+            <p>Take our personalized quiz and get outfit recommendations for any occasion</p>
+            <button class="cta-button">Start Style Quiz</button>
+        </div>
+        <div class="hero-image">
+            <div class="style-card">✨ Find Your Look</div>
+        </div>
+    </section>
 
-        <!-- Style Quiz Section -->
-        <section id="quiz" class="quiz-section">
-            <div class="container">
-                <h2>Style Quiz</h2>
-                <p class="section-subtitle">Answer 10 questions to discover your unique fashion personality</p>
-                <div class="quiz-preview">
-                    <div class="quiz-card">
-                        <h3>Question 1 of 10</h3>
-                        <p>What's your ideal weekend outfit?</p>
-                        <div class="quiz-options">
-                            <button class="quiz-option">Casual jeans & sneakers</button>
-                            <button class="quiz-option">Flowy dress & sandals</button>
-                            <button class="quiz-option">Tailored blazer & trousers</button>
+    <!-- Quiz Section -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2>Style Personality Quiz</h2>
+            <p>Answer these questions to discover your unique style!</p>
+            
+            <div class="quiz-container">
+                <div class="question-card">
+                    <h3>Question 1 of 5</h3>
+                    <p>What's your ideal weekend activity?</p>
+                    <div class="options">
+                        <button class="option-btn">Exploring art galleries</button>
+                        <button class="option-btn">Hiking in nature</button>
+                        <button class="option-btn">Shopping downtown</button>
+                        <button class="option-btn">Cozy movie marathon</button>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <h3>Question 2 of 5</h3>
+                    <p>Pick your favorite color palette:</p>
+                    <div class="color-options">
+                        <div class="color-choice">
+                            <div class="color-preview neutral"></div>
+                            <span>Neutral & Earth Tones</span>
+                        </div>
+                        <div class="color-choice">
+                            <div class="color-preview bold"></div>
+                            <span>Bold & Bright</span>
+                        </div>
+                        <div class="color-choice">
+                            <div class="color-preview pastel"></div>
+                            <span>Soft Pastels</span>
+                        </div>
+                        <div class="color-choice">
+                            <div class="color-preview dark"></div>
+                            <span>Dark & Dramatic</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Occasion Matcher Section -->
-        <section id="occasions" class="occasions-section">
-            <div class="container">
-                <h2>Outfit for Every Occasion</h2>
-                <p class="section-subtitle">Get perfect outfit recommendations for any event</p>
-                <div class="occasions-grid">
-                    <div class="occasion-card">
-                        <h3>Work Meeting</h3>
-                        <p>Professional & confident looks</p>
-                    </div>
-                    <div class="occasion-card">
-                        <h3>Date Night</h3>
-                        <p>Romantic & stylish outfits</p>
-                    </div>
-                    <div class="occasion-card">
-                        <h3>Weekend Brunch</h3>
-                        <p>Casual & chic combinations</p>
-                    </div>
-                    <div class="occasion-card">
-                        <h3>Formal Event</h3>
-                        <p>Elegant & sophisticated attire</p>
-                    </div>
+    <!-- Results Section -->
+    <section id="results" class="results-section">
+        <div class="container">
+            <h2>Your Style Profile</h2>
+            <div class="result-card">
+                <h3>Classic Elegant</h3>
+                <p>You love timeless pieces that never go out of style. Your wardrobe focuses on quality basics that can be dressed up or down for any occasion.</p>
+                <div class="style-traits">
+                    <span class="trait">Sophisticated</span>
+                    <span class="trait">Timeless</span>
+                    <span class="trait">Versatile</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="gallery-section">
-            <div class="container">
-                <h2>Style Gallery</h2>
-                <p class="section-subtitle">Browse curated looks and trending styles</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <div class="placeholder-image">Minimalist Chic</div>
-                        <p>Clean lines & neutral tones</p>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">Boho Glam</div>
-                        <p>Free-spirited & artistic</p>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">Classic Elegance</div>
-                        <p>Timeless & sophisticated</p>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">Street Style</div>
-                        <p>Urban & edgy looks</p>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">Romantic Feminine</div>
-                        <p>Soft & delicate details</p>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="placeholder-image">Power Dressing</div>
-                        <p>Bold & confident styles</p>
-                    </div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Style Gallery</h2>
+            <p>Get inspired by outfits for every occasion</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="outfit-placeholder">👔</div>
+                    <h4>Business Professional</h4>
+                    <p>Perfect for meetings and office events</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="outfit-placeholder">👗</div>
+                    <h4>Date Night</h4>
+                    <p>Romantic and stylish evening looks</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="outfit-placeholder">👕</div>
+                    <h4>Casual Weekend</h4>
+                    <p>Comfortable yet put-together</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="outfit-placeholder">✨</div>
+                    <h4>Special Events</h4>
+                    <p>Formal occasions and celebrations</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="outfit-placeholder">🌟</div>
+                    <h4>Creative & Fun</h4>
+                    <p>Express your artistic side</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="outfit-placeholder">💼</div>
+                    <h4>Business Casual</h4>
+                    <p>Professional but relaxed</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 StyleFinder. Discover your style, express yourself.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 StyleSolver. Find your perfect style for every occasion.</p>
+        </div>
     </footer>
 </body>
 </html>
+
